@@ -59,8 +59,8 @@ public class Util {
 		BigDecimal valorDiaSemanaPeriodo = BigDecimal.ZERO;
 		BigDecimal valorFimSemanaPeriodo = BigDecimal.ZERO;
 
-		HashMap<Cliente, BigDecimal> hashDiaSemana = hotel.getHashDiaSemana();
-		HashMap<Cliente, BigDecimal> hashFimSemana = hotel.getHashFimSemana();
+		HashMap<Cliente, BigDecimal> hashDiaSemana = hotel.getValoresDiaSemanaCliente();
+		HashMap<Cliente, BigDecimal> hashFimSemana = hotel.getValoresFimSemanaCliente();
 
 		valorDiaSemanaPeriodo = hashDiaSemana.get(cliente).multiply(new BigDecimal(qtdDiaSemana));
 		valorFimSemanaPeriodo = hashFimSemana.get(cliente).multiply(new BigDecimal(qtdFimSemana));

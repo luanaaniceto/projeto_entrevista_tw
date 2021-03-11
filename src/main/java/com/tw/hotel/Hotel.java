@@ -9,9 +9,9 @@ public abstract class Hotel {
 
 	private String nomeHotel;
 
-	private HashMap<Cliente, BigDecimal> hashDiaSemana;
+	private HashMap<Cliente, BigDecimal> valoresDiaSemanaCliente;
 
-	private HashMap<Cliente, BigDecimal> hashFimSemana;
+	private HashMap<Cliente, BigDecimal> valoresFimSemanaCliente;
 
 	public int getClassificacao() {
 		return this.classificacao;
@@ -21,11 +21,11 @@ public abstract class Hotel {
 		return this.nomeHotel;
 	}
 
-	public HashMap<Cliente, BigDecimal> getHashDiaSemana() {
-		return this.hashDiaSemana;
+	public HashMap<Cliente, BigDecimal> getValoresDiaSemanaCliente() {
+		return this.valoresDiaSemanaCliente;
 	}
 
-	public HashMap<Cliente, BigDecimal> getHashFimSemana() {
-		return this.hashFimSemana;
+	public HashMap<Cliente, BigDecimal> getValoresFimSemanaCliente() {
+		return this.valoresFimSemanaCliente;
 	}
 }

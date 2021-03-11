@@ -14,27 +14,27 @@ public class MarAtlantico extends Hotel{
 	
 	public int classificacao = 5;
 	
-	private HashMap<Cliente, BigDecimal> hashDiaSemana;
-	private HashMap<Cliente, BigDecimal> hashFimSemana;	
+	private HashMap<Cliente, BigDecimal> valoresDiaSemanaCliente;
+	private HashMap<Cliente, BigDecimal> valoresFimSemanaCliente;	
 
 
-	public HashMap<Cliente, BigDecimal> getHashDiaSemana() {
-		return hashDiaSemana;
+	public void setValoresDiaSemanaCliente(HashMap<Cliente, BigDecimal> hashDiaSemana) {
+		this.valoresDiaSemanaCliente = hashDiaSemana;
 	}
 
 
-	public void setHashDiaSemana(HashMap<Cliente, BigDecimal> hashDiaSemana) {
-		this.hashDiaSemana = hashDiaSemana;
+	public HashMap<Cliente, BigDecimal> getValoresDiaSemanaCliente() {
+		return valoresDiaSemanaCliente;
 	}
 
 
-	public HashMap<Cliente, BigDecimal> getHashFimSemana() {
-		return hashFimSemana;
+	public HashMap<Cliente, BigDecimal> getValoresFimSemanaCliente() {
+		return valoresFimSemanaCliente;
 	}
 
 
-	public void setHashFimSemana(HashMap<Cliente, BigDecimal> hashFimSemana) {
-		this.hashFimSemana = hashFimSemana;
+	public void setValoresFimSemanaCliente(HashMap<Cliente, BigDecimal> hashFimSemana) {
+		this.valoresFimSemanaCliente = hashFimSemana;
 	}
 	
 	
@@ -51,7 +51,7 @@ public class MarAtlantico extends Hotel{
 		hashDiaSemana.put(Cliente.REGULAR, new BigDecimal(220));
 		hashDiaSemana.put(Cliente.FIDELIDADE, new BigDecimal(100));
 		
-		this.setHashDiaSemana(hashDiaSemana);
+		this.setValoresDiaSemanaCliente(hashDiaSemana);
 	}
 	
 	private void preencherDiariaFimSemana() {
@@ -59,7 +59,7 @@ public class MarAtlantico extends Hotel{
 		hashFimSemana.put(Cliente.REGULAR, new BigDecimal(150));
 		hashFimSemana.put(Cliente.FIDELIDADE, new BigDecimal(40));
 		
-		this.setHashFimSemana(hashFimSemana);
+		this.setValoresFimSemanaCliente(hashFimSemana);
 	}
 
 }
